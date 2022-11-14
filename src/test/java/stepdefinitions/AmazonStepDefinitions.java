@@ -26,9 +26,9 @@ public class AmazonStepDefinitions {
 
     @Then("Arama sonuclarinin Nutella icerdigini test eder")
     public void arama_sonuclarinin_nutella_icerdigini_test_eder() {
-        String actualArmaSonucu= amazonPage.searchResultElement.getText();
+        String actualAramaSonucu= amazonPage.searchResultElement.getText();
         String expectedKelime= "Nutella";
-        Assert.assertTrue(actualArmaSonucu.contains(expectedKelime));
+        Assert.assertTrue(actualAramaSonucu.contains(expectedKelime));
     }
 
     @Then("Sonra da sayfayi kapatir")
@@ -42,18 +42,30 @@ public class AmazonStepDefinitions {
 
     @And("Arama sonuclarinin Java icerdigini test eder")
     public void aramaSonuclarininJavaIcerdiginiTestEder() {
-        String actualArmaSonucu= amazonPage.searchResultElement.getText();
+        String actualAramaSonucu= amazonPage.searchResultElement.getText();
         String expectedKelime= "Java";
-        Assert.assertTrue(actualArmaSonucu.contains(expectedKelime));
+        Assert.assertTrue(actualAramaSonucu.contains(expectedKelime));
     }
 
     @Then("Arama kutusuna Apple yazip aratir")
-    public void aramaKutusunaAppleYazipAratir() { amazonPage.searchBox.sendKeys("Apple" + Keys.ENTER); }
+    public void aramaKutusunaAppleYazipAratir() {
+        amazonPage.searchBox.sendKeys("Apple" + Keys.ENTER); }
 
     @And("Sonuclarin Apple icerdigini test eder")
     public void sonuclarinAppleIcerdiginiTestEder() {
-        String actualArmaSonucu= amazonPage.searchResultElement.getText();
+        String actualAramaSonucu= amazonPage.searchResultElement.getText();
         String expectedKelime= "Apple";
-        Assert.assertTrue(actualArmaSonucu.contains(expectedKelime));
+        Assert.assertTrue(actualAramaSonucu.contains(expectedKelime));
+    }
+
+    @Then("Arama cubuguna {string} yazip aratir")
+    public void aramaCubugunaYazipAratir(String istenenKelime) {
+        amazonPage.searchBox.sendKeys(istenenKelime + Keys.ENTER);
+    }
+
+    @And("Arama sonuclarinin {string} icerdigini test eder")
+    public void aramaSonuclarininIcerdiginiTestEder(String istenenKelime) {
+        String actualAramaSonucu= amazonPage.searchResultElement.getText();
+        Assert.assertTrue(actualAramaSonucu.contains(istenenKelime));
     }
 }

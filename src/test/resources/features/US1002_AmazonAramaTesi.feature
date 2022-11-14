@@ -1,5 +1,5 @@
 
-@wip
+
 Feature: US1002 Amazon arama testi
 
   # Kullanicinin arama yapmasi icin 3 scenario olusturun
