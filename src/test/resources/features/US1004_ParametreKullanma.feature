@@ -1,7 +1,7 @@
 
   Feature: US1004 Parametre Kullanma
 
-    @wip
+
     Scenario: TC 08 Kullanici parametre ile verilen kelimeyi amazon'da aratabilmeli
 
       Given Kullanici Amazon ana sayfaya gider

@@ -68,4 +68,15 @@ public class AmazonStepDefinitions {
         String actualAramaSonucu= amazonPage.searchResultElement.getText();
         Assert.assertTrue(actualAramaSonucu.contains(istenenKelime));
     }
+
+    @Given("Kullanici {string} ana sayfaya gider")
+    public void kullaniciAnaSayfayaGider(String istenenUrl) {
+        Driver.getDriver().get(ConfigReader.getProperty(istenenUrl));
+    }
+
+    @Then("url'in {string} icerdigini test eder")
+    public void urlInIcerdiginiTestEder(String istenenKelime) {
+        String actualUrl= Driver.getDriver().getCurrentUrl();
+        Assert.assertTrue(actualUrl.contains(istenenKelime));
+    }
 }
