@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="20.072">
+    <testcase classname="US1002 Amazon arama testi" name="TC 02 Kullanici Amazon'da Nutella aramasi yapar" time="8.063">
+        <system-out><![CDATA[Given Kullanici Amazon ana sayfaya gider....................................passed
+Then Arama cubuguna Nutella yazip aratir....................................passed
+And Arama sonuclarinin Nutella icerdigini test eder.........................passed
+And Sonra da sayfayi kapatir................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US1002 Amazon arama testi" name="TC 03 Kullanici Amazon'da Java aramasi yapar" time="7">
+        <system-out><![CDATA[Given Kullanici Amazon ana sayfaya gider....................................passed
+Then Arama kutusuna Java yazip aratir.......................................passed
+And Arama sonuclarinin Java icerdigini test eder............................passed
+And Sonra da sayfayi kapatir................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US1002 Amazon arama testi" name="TC 04 Kullanici Amazon'da Apple aramasi yapar" time="4.797">
+        <system-out><![CDATA[Given Kullanici Amazon ana sayfaya gider....................................passed
+Then Arama kutusuna Apple yazip aratir......................................passed
+And Sonuclarin Apple icerdigini test eder...................................passed
+And Sonra da sayfayi kapatir................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
