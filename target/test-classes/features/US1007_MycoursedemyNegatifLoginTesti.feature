@@ -1,4 +1,3 @@
-@wip
 Feature: US1007 Yanlis Bilgilerle Giris yapilamaz
 
   # 3 farkl isenaryo ile Negatif Login Testi yapalim
@@ -6,7 +5,7 @@ Feature: US1007 Yanlis Bilgilerle Giris yapilamaz
   Scenario: TC13 Yanlis email, dogru password ile giris yapilamamali
 
     Given Kullanici "myUrl" ana sayfaya gider
-    # And mycoursedemy cookies butonuna basar -- ki bunu once StepDefinitions'da tanimlamaliyiz
+    # And mycoursedemy cookies butonuna basar
     Then mycoursedemy anasayfa login linkine tiklar
     Then mycoursedemy kullanici adi olarak "myInvalidEmail" girer
     And mycoursedemy password olarak "myValidPassword" girer
@@ -17,7 +16,7 @@ Feature: US1007 Yanlis Bilgilerle Giris yapilamaz
   Scenario: TC14 gecerli email, yanlis password ile giris yapilamamali
 
     Given Kullanici "myUrl" ana sayfaya gider
-    # And mycoursedemy cookies butonuna basar -- ki bunu once StepDefinitions'da tanimlamaliyiz
+    # And mycoursedemy cookies butonuna basar
     Then mycoursedemy anasayfa login linkine tiklar
     Then mycoursedemy kullanici adi olarak "myValidEmail" girer
     And mycoursedemy password olarak "myInvalidPassword" girer
@@ -28,7 +27,7 @@ Feature: US1007 Yanlis Bilgilerle Giris yapilamaz
   Scenario: TC15 yanlis email, yanlis password ile giris yapilamamali
 
     Given Kullanici "myUrl" ana sayfaya gider
-    # And mycoursedemy cookies butonuna basar -- ki bunu once StepDefinitions'da tanimlamaliyiz
+    # And mycoursedemy cookies butonuna basar
     Then mycoursedemy anasayfa login linkine tiklar
     Then mycoursedemy kullanici adi olarak "myInvalidEmail" girer
     And mycoursedemy password olarak "myInvalidPassword" girer

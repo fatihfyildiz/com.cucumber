@@ -1,4 +1,3 @@
-@wip
 Feature: US1007 Yanlis Bilgilerle Giris yapilamaz
 
   # 3 farkl isenaryo ile Negatif Login Testi yapalim

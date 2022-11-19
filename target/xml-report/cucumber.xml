@@ -1,33 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="41.895">
-    <testcase classname="US1007 Yanlis Bilgilerle Giris yapilamaz" name="TC13 Yanlis email, dogru password ile giris yapilamamali" time="8.218">
-        <system-out><![CDATA[Given Kullanici "myUrl" ana sayfaya gider...................................passed
-Then mycoursedemy anasayfa login linkine tiklar.............................passed
-Then mycoursedemy kullanici adi olarak "myInvalidEmail" girer...............passed
-And mycoursedemy password olarak "myValidPassword" girer....................passed
-And mycoursedemy login butonuna basar.......................................passed
-Then mycoursedemy giris yapilamadigini test eder............................passed
-And Sonra da sayfayi kapatir................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="US1007 Yanlis Bilgilerle Giris yapilamaz" name="TC14 gecerli email, yanlis password ile giris yapilamamali" time="8.021">
-        <system-out><![CDATA[Given Kullanici "myUrl" ana sayfaya gider...................................passed
-Then mycoursedemy anasayfa login linkine tiklar.............................passed
-Then mycoursedemy kullanici adi olarak "myValidEmail" girer.................passed
-And mycoursedemy password olarak "myInvalidPassword" girer..................passed
-And mycoursedemy login butonuna basar.......................................passed
-Then mycoursedemy giris yapilamadigini test eder............................passed
-And Sonra da sayfayi kapatir................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="US1007 Yanlis Bilgilerle Giris yapilamaz" name="TC15 yanlis email, yanlis password ile giris yapilamamali" time="25.441">
-        <system-out><![CDATA[Given Kullanici "myUrl" ana sayfaya gider...................................passed
-Then mycoursedemy anasayfa login linkine tiklar.............................passed
-Then mycoursedemy kullanici adi olarak "myInvalidEmail" girer...............passed
-And mycoursedemy password olarak "myInvalidPassword" girer..................passed
-And mycoursedemy login butonuna basar.......................................passed
-Then mycoursedemy giris yapilamadigini test eder............................passed
-And Sonra da sayfayi kapatir................................................passed
-]]></system-out>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.269">
+    <testcase classname="US1011 Automation Practice Kullanici Olusturma Testi" name="TC18 Kullanici yeni kullanici olusturabilmeli" time="0.023">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given Kullanici "automationUrl" ana sayfaya gider...........................passed
+And user signup linkine tiklar..............................................undefined
+And new user bölümüne name ve email adresi girer............................skipped
+And sign Up butonuna basar..................................................skipped
+And user kisisel bilgilerini ve iletisim bilgilerini girer..................skipped
+And user Register butonuna basar............................................skipped
+Then hesap olustugunu dogrulayin............................................skipped
+]]></failure>
     </testcase>
 </testsuite>
