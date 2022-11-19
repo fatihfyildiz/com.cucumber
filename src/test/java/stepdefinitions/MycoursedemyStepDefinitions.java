@@ -39,4 +39,9 @@ public class MycoursedemyStepDefinitions {
     public void mycoursedemyGirisYapilamadiginiTestEder() {
         Assert.assertTrue(mycoursedemyPage.loginLinki.isDisplayed());
     }
+
+    @Then("mycoursedemy cookies butonuna basar")
+    public void mycoursedemy_cookies_butonuna_basar (){
+        mycoursedemyPage.acceptCookies.click();
+    }
 }

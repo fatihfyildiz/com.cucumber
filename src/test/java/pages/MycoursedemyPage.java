@@ -26,4 +26,7 @@ public class MycoursedemyPage {
     @FindBy (linkText = "My courses")
     public WebElement myCoursesLink;
 
+    @FindBy(xpath = "//a[@onclick='cookieAccept();']")
+    public WebElement acceptCookies;
+
 }
