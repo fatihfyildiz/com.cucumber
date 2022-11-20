@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="120.897">
+    <testcase classname="US1003 Background kullanrak Amazon arama testi" name="TC 05 Kullanici Amazon'da Nutella aramasi yapar" time="14.647">
+        <system-out><![CDATA[Given Kullanici Amazon ana sayfaya gider....................................passed
+Then Arama cubuguna Nutella yazip aratir....................................passed
+And Arama sonuclarinin Nutella icerdigini test eder.........................passed
+And Sonra da sayfayi kapatir................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US1003 Background kullanrak Amazon arama testi" name="TC 06 Kullanici Amazon'da Java aramasi yapar" time="25.961">
+        <system-out><![CDATA[Given Kullanici Amazon ana sayfaya gider....................................passed
+Then Arama kutusuna Java yazip aratir.......................................passed
+And Arama sonuclarinin Java icerdigini test eder............................passed
+And Sonra da sayfayi kapatir................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US1003 Background kullanrak Amazon arama testi" name="TC 07 Kullanici Amazon'da Apple aramasi yapar" time="25.765">
+        <system-out><![CDATA[Given Kullanici Amazon ana sayfaya gider....................................passed
+Then Arama kutusuna Apple yazip aratir......................................passed
+And Sonuclarin Apple icerdigini test eder...................................passed
+And Sonra da sayfayi kapatir................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US1008 Herokuapp Wait Testleri" name="TC16 Kullanici wait islemlerinin calistigini test eder" time="54.26">
+        <system-out><![CDATA[Given Kullanici "herokuUrl" ana sayfaya gider...............................passed
+Then Herokuapp Add Element butonuna basar...................................passed
+And Herokuapp Delete butonu gorunmesini bekler..............................passed
+And Herokuapp Delete butonunun gorunur oldugunu test eder...................passed
+Then Herokuapp Delete butonuna basarak butonu siler.........................passed
+And Herokuapp Delete butonunun gorunmedigini test eder......................passed
+Then Sonra da sayfayi kapatir...............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

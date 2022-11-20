@@ -1,3 +1,4 @@
+@paralleltest2
 
   Feature: US1008 Herokuapp Wait Testleri
     

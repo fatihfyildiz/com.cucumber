@@ -1,4 +1,4 @@
-
+@paralleltest2
 Feature: US1003 Background kullanrak Amazon arama testi
 
   Background: Amazon anasayfaya gitme

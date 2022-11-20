@@ -1,4 +1,4 @@
-@wip
+
 Feature: US1011 Automation Practice Kullanici Olusturma Testi
 
   Scenario: TC18 Kullanici yeni kullanici olusturabilmeli

@@ -1,4 +1,4 @@
-
+@paralleltest1
 
 Feature: US1002 Amazon arama testi
 
