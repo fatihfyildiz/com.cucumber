@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.208">
-    <testcase classname="JDBC kullanarak yeterli bilgi ile database testi yapilabilir" name="JDBC01 kullanici database'de sorgu yapabilmeli" time="2.032">
-        <system-out><![CDATA[Given Kullanici JDBC ile database'e baglanir................................passed
-Then users tablosundaki isim verilerini alir................................passed
-And isim verilerini test eder...............................................passed
-]]></system-out>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.189">
+    <testcase classname="JDBC03 Kullanici database'de update yapabilmeli" name="TC03 kullanici id degeri ile istedigi soyismi update ettigini test eder" time="2.013">
+        <failure message="expected:&lt;[Pymar]&gt; but was:&lt;[happiness]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given Kullanici JDBC ile database'e baglanir................................passed
+Then id degeri 14 olan kisinin "last_name" degerini "happiness" yapar.......passed
+And id si 14 olan user'in "last_name" degerinin "happiness" oldugunu test eder.failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[Pymar]> but was:<[happiness]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at databaseStepdefinitions.UsersStepDefinitions.idSiOlanUserInDegerininOldugunuTestEder(UsersStepDefinitions.java:119)
+	at ✽.id si 14 olan user'in "last_name" degerinin "happiness" oldugunu test eder(file:///C:/Users/ffyil/Desktop/com.Cucumber/src/test/resources/features/JDBC03_updateTesti.feature:8)
+]]></failure>
     </testcase>
 </testsuite>

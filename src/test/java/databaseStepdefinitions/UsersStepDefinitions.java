@@ -103,4 +103,32 @@ public class UsersStepDefinitions {
 
     }
 
+
+    @Then("id si {int} olan user'in {string} degerinin {string} oldugunu test eder")
+    public void idSiOlanUserInDegerininOldugunuTestEder(int id, String last_name, String verilenDeger) throws SQLException {
+
+        // Id'si 14 olan user'in  "last_name" degerini getir
+        // SELECT last_name FROM users WHERE id=14
+        //String query="SELECT last_name FROM users";
+        String query= "SELECT "+last_name+" FROM users WHERE id="+id;
+
+        resultSet=statement.executeQuery(query);
+        resultSet.first();
+        String actualSoyisim= resultSet.getString("last_name");
+
+        Assert.assertEquals(actualSoyisim,verilenDeger);
+    }
+
+    @Then("id degeri {int} olan kisinin {string} degerini {string} yapar")
+    public void idDegeriOlanKisininDegeriniYapar(int id, String field_name, String istenenDeger) {
+
+        String querry= "UPDATE users SET" + field_name + "='" + istenenDeger + "' WHERE id=14" + id;
+
+        try {
+            statement.executeQuery(querry);
+        } catch (SQLException e) {
+            System.out.println("Yapilan sorgu ResultSet dondurmuyor");
+        }
+
+    }
 }
