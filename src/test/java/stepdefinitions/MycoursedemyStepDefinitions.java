@@ -42,6 +42,16 @@ public class MycoursedemyStepDefinitions {
 
     @Then("mycoursedemy cookies butonuna basar")
     public void mycoursedemy_cookies_butonuna_basar (){
+
         mycoursedemyPage.acceptCookies.click();
     }
+
+    /*
+    @Then("Click on Add New Course in the upper right corner of the page")
+    public void clickOnAddNewCourseInTheUpperRightCornerOfThePage() {
+        mycoursedemyPage.add_newcourse.click();
+    }
+     */
+
+
 }

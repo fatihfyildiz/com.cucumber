@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.189">
-    <testcase classname="JDBC03 Kullanici database'de update yapabilmeli" name="TC03 kullanici id degeri ile istedigi soyismi update ettigini test eder" time="2.013">
-        <failure message="expected:&lt;[Pymar]&gt; but was:&lt;[happiness]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given Kullanici JDBC ile database'e baglanir................................passed
-Then id degeri 14 olan kisinin "last_name" degerini "happiness" yapar.......passed
-And id si 14 olan user'in "last_name" degerinin "happiness" oldugunu test eder.failed
-
-StackTrace:
-org.junit.ComparisonFailure: expected:<[Pymar]> but was:<[happiness]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at databaseStepdefinitions.UsersStepDefinitions.idSiOlanUserInDegerininOldugunuTestEder(UsersStepDefinitions.java:119)
-	at ✽.id si 14 olan user'in "last_name" degerinin "happiness" oldugunu test eder(file:///C:/Users/ffyil/Desktop/com.Cucumber/src/test/resources/features/JDBC03_updateTesti.feature:8)
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.237">
+    <testcase classname="US 0030 Requirements Adding Test" name="Requirements should be added with the &quot;+&quot; button" time="0.022">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given Launch browser Go to url..............................................undefined
+Then Click on Login button..................................................skipped
+Then Enter correct instructor email address and password....................skipped
+Then Click on the Instructor button.........................................skipped
+Then Click on Course Manager from the menu under Navigation.................skipped
+Then Click on Add New Course in the upper right corner of the page..........skipped
+Then Click Requirements from the row under the Course Add Form..............skipped
+Then Add a box by pressing the green + button...............................skipped
+And Log out by closing the page.............................................skipped
 ]]></failure>
     </testcase>
 </testsuite>
