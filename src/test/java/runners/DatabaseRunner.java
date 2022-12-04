@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/cucumber.xml"
         },
         features = "src/test/resources/features",
-        glue="databaseStepdefinitions",
-        tags= "@US30",
+        glue="stepdefinitions",
+        tags= "@ffy",
         dryRun = false
 )
 public class DatabaseRunner {

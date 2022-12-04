@@ -79,4 +79,6 @@ public class AmazonStepDefinitions {
         String actualUrl= Driver.getDriver().getCurrentUrl();
         Assert.assertTrue(actualUrl.contains(istenenKelime));
     }
+
+
 }

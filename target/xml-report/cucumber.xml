@@ -1,15 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.237">
-    <testcase classname="US 0030 Requirements Adding Test" name="Requirements should be added with the &quot;+&quot; button" time="0.022">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given Launch browser Go to url..............................................undefined
-Then Click on Login button..................................................skipped
-Then Enter correct instructor email address and password....................skipped
-Then Click on the Instructor button.........................................skipped
-Then Click on Course Manager from the menu under Navigation.................skipped
-Then Click on Add New Course in the upper right corner of the page..........skipped
-Then Click Requirements from the row under the Course Add Form..............skipped
-Then Add a box by pressing the green + button...............................skipped
-And Log out by closing the page.............................................skipped
-]]></failure>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="148.434">
+    <testcase classname="USyyyy Automation Negative Login Test" name="Kullanici negatif bilgiler girdiginden giris yapilamaz" time="41.66">
+        <system-out><![CDATA[Given Kullanici "myAutomationUrl" sayfasina gider...........................passed
+Then Kullanici Signout Butonuna tiklar......................................passed
+Then Kullanici email bolumune "myInvalidEmail1" girer.......................passed
+Then Kullanici password bolumune "myInvalidPassword1" girer.................passed
+Then Kullanici Login Butonuna tiklar........................................passed
+Then Kullanici sayfaya giris yapilamadigini test eder.......................passed
+Then Sonra da sayfayi kapatir...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="USyyyy Automation Negative Login Test" name="Kullanici negatif bilgiler girdiginden giris yapilamaz 2" time="40.431">
+        <system-out><![CDATA[Given Kullanici "myAutomationUrl" sayfasina gider...........................passed
+Then Kullanici Signout Butonuna tiklar......................................passed
+Then Kullanici email bolumune "myInvalidEmail2" girer.......................passed
+Then Kullanici password bolumune "myInvalidPassword2" girer.................passed
+Then Kullanici Login Butonuna tiklar........................................passed
+Then Kullanici sayfaya giris yapilamadigini test eder.......................passed
+Then Sonra da sayfayi kapatir...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="USyyyy Automation Negative Login Test" name="Kullanici negatif bilgiler girdiginden giris yapilamaz 3" time="39.882">
+        <system-out><![CDATA[Given Kullanici "myAutomationUrl" sayfasina gider...........................passed
+Then Kullanici Signout Butonuna tiklar......................................passed
+Then Kullanici email bolumune "myInvalidEmail3" girer.......................passed
+Then Kullanici password bolumune "myInvalidPassword3" girer.................passed
+Then Kullanici Login Butonuna tiklar........................................passed
+Then Kullanici sayfaya giris yapilamadigini test eder.......................passed
+Then Sonra da sayfayi kapatir...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="USyyyy Automation Negative Login Test" name="Kullanici negatif bilgiler girdiginden giris yapilamaz 4" time="26.245">
+        <system-out><![CDATA[Given Kullanici "myAutomationUrl" sayfasina gider...........................passed
+Then Kullanici Signout Butonuna tiklar......................................passed
+Then Kullanici email bolumune "myInvalidEmail4" girer.......................passed
+Then Kullanici password bolumune "myInvalidPassword4" girer.................passed
+Then Kullanici Login Butonuna tiklar........................................passed
+Then Kullanici sayfaya giris yapilamadigini test eder.......................passed
+Then Sonra da sayfayi kapatir...............................................passed
+]]></system-out>
     </testcase>
 </testsuite>
