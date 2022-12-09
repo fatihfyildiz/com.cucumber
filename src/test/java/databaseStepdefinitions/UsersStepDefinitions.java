@@ -74,7 +74,7 @@ public class UsersStepDefinitions {
         resultSet.next();
         System.out.println(resultSet.getString("first_name")); // Kleon
 
-        // 11.nci stirdak iismin Trever oldugunu test edelim
+        // 11.nci satirdaki ismin Trever oldugunu test edelim
         resultSet.absolute(11);
         String actual11nciIsim= resultSet.getString("first_name");
         String expected11nciIsim= "Trever";
