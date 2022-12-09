@@ -1,7 +1,7 @@
 @ffy
   Feature: USyyyy Automation Negative Login Test
 
-    Scenario: Kullanici negatif bilgiler girdiginden giris yapilamaz
+    Scenario Outline: Kullanici negatif bilgiler girdiginden giris yapilamaz
 
       Given Kullanici "myAutomationUrl" sayfasina gider
       Then Kullanici Signout Butonuna tiklar
