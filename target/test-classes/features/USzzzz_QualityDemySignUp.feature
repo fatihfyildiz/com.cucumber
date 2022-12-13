@@ -16,11 +16,11 @@
       Examples:
         | istenenIsim | istenenSoyisim | istenenEmail | istenenPassword |
         | yanlisIsim  | yanlisSoyisim  | yanlisEmail  | yanlisPassword  |
-        | yanlis2Isim | yanlis2Soyisim | yanlis2Email | yanlis2Password |
-        | yanlis3Isim | yanlis3Soyisim | yanlis3Email | yanlis3Password |
-        | yanlisIsim  | yanlis2Soyisim | dogruEmail   | yanlis2Password |
-        | yanlis2Isim | yanlis2Soyisim | yanlisEmail  | dogruPassword   |
-        | dogruIsim   | yanlis3Soyisim | dogruEmail   | yanlisPassword  |
-        | dogruIsim   | dogruSoyisim   | dogruEmail   | dogruPassword   |
+        | yanlisIsim2 | yanlisSoyisim2 | yanlisEmail2 | yanlisPassword2 |
+        | yanlisIsim3 | yanlisSoyisim3 | yanlisEmail3 | yanlisPassword3 |
+        | yanlisIsim  | yanlisSoyisim2 | dogruEmail   | yanlisPassword2 |
+        | yanlisIsim2 | yanlisSoyisim2 | yanlisEmail  | dogruPassword   |
+        | dogruIsim   | yanlisSoyisim3 | dogruEmail   | yanlisPassword  |
+
 
 
