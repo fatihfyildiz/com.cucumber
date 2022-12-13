@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="50.023">
-    <testcase classname="Grid Test Firefox" name="Firefox Test" time="49.803">
-        <system-out><![CDATA[Given getURL firefox........................................................passed
-Then Verify title firefox...................................................passed
-And Verify currentURL firefox...............................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="20.469">
+    <testcase classname="Grid Test Edge" name="Edge Test" time="20.282">
+        <system-out><![CDATA[Given get URL edge..........................................................passed
+Then Verify title edge......................................................passed
+And Verify currentURL edge..................................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

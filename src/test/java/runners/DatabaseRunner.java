@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue="stepdefinitions",
-        tags= "@grid1",
+        tags= "@grid2",
         dryRun = false
 )
 public class DatabaseRunner {

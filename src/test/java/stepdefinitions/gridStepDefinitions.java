@@ -5,6 +5,7 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -63,6 +64,29 @@ public class gridStepDefinitions {
 
         assertEquals("https://www.google.com/", currentUR);
 
+    }
+
+    @Given("get URL edge")
+    public void get_url_edge() throws MalformedURLException {
+
+        driver= new RemoteWebDriver(new URL("http://192.168.88.128:4444"),new EdgeOptions());
+
+        driver.get("https://www.google.com/");
+    }
+    @Then("Verify title edge")
+    public void verify_title_edge() {
+
+        String title =driver.getTitle();
+
+        assertEquals("Google", title);
+
+    }
+    @Then("Verify currentURL edge")
+    public void verify_current_url_edge() {
+
+        String  currentUR = driver.getCurrentUrl();
+
+        assertEquals("https://www.google.com/", currentUR);
     }
 
 }
