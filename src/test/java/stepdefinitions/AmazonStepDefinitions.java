@@ -55,6 +55,7 @@ public class AmazonStepDefinitions {
     public void sonuclarinAppleIcerdiginiTestEder() {
         String actualAramaSonucu= amazonPage.searchResultElement.getText();
         String expectedKelime= "Apple";
+
         Assert.assertTrue(actualAramaSonucu.contains(expectedKelime));
     }
 
