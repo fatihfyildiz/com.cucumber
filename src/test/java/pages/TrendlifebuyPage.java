@@ -11,7 +11,9 @@ public class TrendlifebuyPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    // Admin Page
+    // User Story 37: recharge - offline - index
+
+    // Admin Login Page
     @FindBy(xpath = "//input[@name='login']")
     public WebElement EmailBox;
 
@@ -22,8 +24,18 @@ public class TrendlifebuyPage {
     public WebElement SignInLink;
 
     // Dashboard
+    @FindBy (xpath = "//*[text()='Wallet Manage']")
+    public WebElement WalletManage;
 
+    // Offline Recharge Page
+    @FindBy (xpath = "//*[text()='Offline Recharge']")
+    public WebElement OfflineRecharge;
 
+    // Keywords Search Page
+
+    // Visitor Report Page
+
+    // My Ticket Page
 
 
 
