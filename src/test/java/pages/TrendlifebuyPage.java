@@ -15,21 +15,21 @@ public class TrendlifebuyPage {
 
     // Admin Login Page
     @FindBy(xpath = "//input[@name='login']")
-    public WebElement EmailBox;
+    public WebElement emailBox;
 
     @FindBy(xpath = "//input[@name='password']")
-    public WebElement PasswordBox;
+    public WebElement passwordBox;
 
     @FindBy(id = "sign_in_btn")
-    public WebElement SignInLink;
+    public WebElement signInLink;
 
     // Dashboard
     @FindBy (xpath = "//*[text()='Wallet Manage']")
-    public WebElement WalletManage;
+    public WebElement walletManage;
 
     // Offline Recharge Page
     @FindBy (xpath = "//*[text()='Offline Recharge']")
-    public WebElement OfflineRecharge;
+    public WebElement offlineRecharge;
 
     // Keywords Search Page
 
