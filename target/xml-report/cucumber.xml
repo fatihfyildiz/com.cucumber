@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="20.469">
-    <testcase classname="Grid Test Edge" name="Edge Test" time="20.282">
-        <system-out><![CDATA[Given get URL edge..........................................................passed
-Then Verify title edge......................................................passed
-And Verify currentURL edge..................................................passed
-]]></system-out>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.334">
+    <testcase classname="US037 recharge - offline - index tests" name="Administrator should be able to view balance changes made offline" time="0.022">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given Open browser go to url "AdminUrl".....................................undefined
+Then Admin enters an "email", a "password" and then clicks sign in link on admin page to login.skipped
+Then Admin clicks Wallet Manage link........................................skipped
+Then Admin clicks Offline Recharge link.....................................skipped
+Then Admin verifies that Offline Recharge List is displayed on the Offline Recharge Page.skipped
+And Closes the page.........................................................skipped
+]]></failure>
     </testcase>
 </testsuite>

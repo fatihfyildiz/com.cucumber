@@ -23,13 +23,16 @@ public class TrendlifebuyPage {
     @FindBy(id = "sign_in_btn")
     public WebElement signInLink;
 
-    // Dashboard
+    // Dashboard Page
     @FindBy (xpath = "//*[text()='Wallet Manage']")
     public WebElement walletManage;
 
     // Offline Recharge Page
     @FindBy (xpath = "//*[text()='Offline Recharge']")
     public WebElement offlineRecharge;
+
+    @FindBy (xpath = "//h3[text()='Offline Recharge']")
+    public WebElement offlineRechargeList;
 
     // Keywords Search Page
 
