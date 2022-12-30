@@ -1,7 +1,6 @@
-
+@AdminSystemTest
   Feature: US037 recharge - offline - index tests
 
-    @SystemTesting
     Scenario: TC_3701 Administrator should be able to view balance changes made offline
 
       Given Open browser go to url "AdminUrl"
