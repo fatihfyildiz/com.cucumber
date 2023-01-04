@@ -34,6 +34,34 @@ public class TrendlifebuyPage {
     @FindBy (xpath = "//h3[text()='Offline Recharge']")
     public WebElement offlineRechargeList;
 
+    @FindBy (xpath = "//*[text()='SL']")
+    public WebElement informationSL;
+
+    @FindBy (xpath = "//*[text()='Date']")
+    public WebElement informationDate;
+
+    @FindBy (xpath = "//*[text()='Email']")
+    public WebElement informationEmail;
+
+    @FindBy (xpath = "//*[text()='TXN ID']")
+    public WebElement informationTxnId;
+
+    @FindBy (xpath = "//*[text()='Amount']")
+    public WebElement informationAmount;
+
+    @FindBy (xpath = "//*[text()='Type']")
+    public WebElement informationType;
+
+    @FindBy (xpath = "//*[text()='Payment Method']")
+    public WebElement informationPaymentMethod;
+
+    @FindBy (xpath = "//*[text()='Approval']")
+    public WebElement informationApproval;
+
+    @FindBy (xpath = "//*[text()='Action']")
+    public WebElement informationAction;
+
+
     // Keywords Search Page
 
     // Visitor Report Page

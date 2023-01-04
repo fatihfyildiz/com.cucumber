@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="32.553">
-    <testcase classname="US037 recharge - offline - index tests" name="TC_3701 Administrator should be able to view balance changes made offline" time="32.27">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="47.838">
+    <testcase classname="US037 recharge - offline - index tests / Administrator should be able to view balance changes made offline" name="TC_3702 It should be verified that transactions are listed according to information in the Offline Recharge List" time="47.631">
         <system-out><![CDATA[Given Open browser go to url "AdminUrl".....................................passed
 Then Admin enters an "email", a "password" and then clicks sign in link on admin page to login.passed
 Then Admin clicks Wallet Manage link........................................passed
 Then Admin clicks Offline Recharge link.....................................passed
-Then Admin verifies that Offline Recharge List is displayed on the Offline Recharge Page.passed
+Then Admin verifies that transactions are listed according to SL information in the Offline Recharge List.passed
+Then Admin verifies that transactions are listed according to Date information in the Offline Recharge List.passed
+Then Admin verifies that transactions are listed according to Email information in the Offline Recharge List.passed
+Then Admin verifies that transactions are listed according to TXN ID information in the Offline Recharge List.passed
+Then Admin verifies that transactions are listed according to Amount information in the Offline Recharge List.passed
+Then Admin verifies that transactions are listed according to Type information in the Offline Recharge List.passed
+Then Admin verifies that transactions are listed according to Payment Method information in the Offline Recharge List.passed
+Then Admin verifies that transactions are listed according to Approval information in the Offline Recharge List.passed
+Then Admin verifies that transactions are listed according to Action information in the Offline Recharge List.passed
 And Closes the page.........................................................passed
 ]]></system-out>
     </testcase>
