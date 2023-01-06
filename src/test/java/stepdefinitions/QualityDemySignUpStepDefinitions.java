@@ -40,6 +40,7 @@ public class QualityDemySignUpStepDefinitions {
     }
     @Then("Kullanici uye hesabi olusturamadigini test eder")
     public void kullanici_uye_hesabi_olusturamadigini_test_eder() {
+
         Assert.assertTrue(mycoursedemyPage.signupButton.isDisplayed());
         System.out.println(mycoursedemyPage.hataMesaji.getText());
     }
