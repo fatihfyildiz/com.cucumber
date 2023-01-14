@@ -20,7 +20,9 @@ public class TrendlifebuyPageStepDefinitions {
     public void admin_enters_an_a_and_then_clicks_sign_in_link_on_admin_page_to_login(String string, String string2) {
 
         trendlifebuyPage.emailBox.sendKeys(ConfigReader.getProperty("fatihmail"));
+
         trendlifebuyPage.passwordBox.sendKeys(ConfigReader.getProperty("password"));
+
         trendlifebuyPage.signInLink.click();
     }
 
